@@ -1,0 +1,86 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zap-agil"
+version = "1.0.0"
+description = "Automated WhatsApp messaging tool with GUI, scheduling, attachments and accessibility."
+authors = [
+    { name = "Matheus Henrique Cauduro", email = "contato@matheuscauduro.com.br" }
+]
+license = { text = "GPL" }
+readme = "README.md"
+requires-python = ">=3.11"
+# As dependências estão gerenciadas via requirements.txt
+# Portanto, nenhuma listada aqui
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+# Configuração recomendada para Ruff em projetos modernos Python
+line-length = 100
+target-version = "py313"
+extend-exclude = ["__pycache__", ".env", ".venv", "build", "dist"]
+
+# Ativa correção automática para tudo que for possível
+fix = true
+show-fixes = true
+indent-width = 4
+preview = true
+
+[tool.ruff.lint]
+# Seleção de regras mais completa, incluindo checagem de 'print' e convenções do Pylint.
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "B",    # bugbear
+    "FIX",
+    "I",    # isort
+    "UP",   # pyupgrade
+    "N",    # pep8-naming
+    "A",    # flake8-builtins
+    "C4",   # comprehensions
+    "SIM",  # simplify
+    "TID",  # tidy imports
+    "T20",  # flake8-print (encontra prints esquecidos)
+    "PLC",  # Pylint Convention
+    "PLE",  # Pylint Error
+    "PLW",  # Pylint Warning
+    "RUF"   # ruff-specific
+]
+
+# Ignora globalmente apenas o essencial, que são decisões de estilo ou comuns em wxPython.
+ignore = [
+    "B008",    # Não usar chamadas de função como argumentos default (comum e seguro em wx).
+    "SIM108",  # Usar ternário em vez de if/else (às vezes o if/else é mais legível).
+]
+
+# A MÁGICA ACONTECE AQUI: Ignora regras específicas apenas para certos arquivos.
+# Isso permite manter o linter rígido para o core/utils e flexível para a UI.
+[tool.ruff.lint.per-file-ignores]
+"zap_facil/ui/*.py" = [
+    "F401",    # Imports não usados (wxPython às vezes precisa deles).
+    "C901",    # Função muito complexa (ex: _init_ui).
+    "PLR0912", # Muitos branches (if/elifs).
+    "PLR0913", # Muitos argumentos (construtores de UI).
+    "PLR0915", # Muitas statements (funções de setup de UI).
+    "PLR2004", # "Magic values" (comuns em layouts e cores).
+    "N802",    # Nomes de função podem ter maiúsculas (ex: GetValue).
+    "N806",    # Nomes de variáveis podem ter maiúsculas (ex: EVT_BUTTON).
+    "T201",    # Permite o uso de `print` em arquivos de UI para depuração rápida.
+]
+
+# Para o arquivo principal, que pode ter uma estrutura um pouco diferente.
+"zap_agil.pyw" = ["T201"] # Permite 'print' no arquivo principal, se necessário.
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"

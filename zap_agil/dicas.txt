@@ -1,0 +1,73 @@
+    
+# Guia de Dicas do Zap Fácil
+
+Este guia foi elaborado para proporcionar uma experiência eficiente e acessível no uso do Zap Fácil, tanto para quem prefere o mouse quanto para quem navega por teclado. Todos os recursos contam com atalhos e dicas visuais para facilitar o seu dia a dia.
+
+## Navegação Geral
+- **Abas principais**: Clique com o mouse ou utilize Ctrl+Tab para alternar entre as abas.
+- **Menus**: Acesse pelo mouse ou pressione Alt para ativar a barra de menus e navegue com as setas.
+
+## Atalhos Globais
+- **Ctrl+Q**: Fechar o aplicativo
+- **Ctrl+M**: Minimizar para a bandeja
+- **Ctrl+T**: Gerenciar modelos de mensagem
+- **Ctrl+A**: Agendar campanhas
+- **Ctrl+R**: Visualizar relatórios
+- **Ctrl+G**: Abrir configurações
+- **Ctrl+N**: Ler novidades do sistema
+- **Ctrl+D**: Ler dicas de uso
+
+## Envio de Mensagens
+- **Adicionar contato manualmente**: Digite o número/nome e pressione Enter ou Ctrl+M.
+- **Adicionar à lista manual**: Preencha nome e número, pressione Ctrl+Enter ou clique no botão correspondente.
+- **Remover contato manual**: Selecione na lista e pressione Delete ou clique no botão de remoção.
+- **Selecionar arquivo de contatos**: Clique no botão ou pressione Ctrl+B.
+
+## Mensagem e Anexos
+- **Escreva sua mensagem** no campo principal. Utilize variáveis como @Nome, @Vencimento para personalizar.
+- **Anexar documento**: Clique em "Anexar documento" ou pressione Ctrl+D.
+- **Anexar mídia**: Clique em "Anexar mídia" ou pressione Ctrl+I.
+- **Anexar áudio**: Clique em "Anexar áudio" ou pressione Ctrl+A.
+- **Gravar áudio**: Clique em "● Gravar". Para parar, clique novamente.
+- **Ouvir áudio**: Clique em "▶ Ouvir". Para pausar, clique novamente.
+
+## Modelos de Mensagem
+- **Novo modelo**: Ctrl+N
+- **Excluir modelo**: Ctrl+D
+- **Salvar modelo**: Ctrl+S
+- **Selecionar anexo**: Ctrl+B
+- **Remover anexo**: Ctrl+R
+- **Fechar diálogo**: Esc
+
+## Relatórios
+- **Exportar para CSV**: Ctrl+E
+- **Excluir relatório**: Ctrl+D
+- **Fechar diálogo**: Esc
+
+## Agendamento de Campanhas
+- **Novo agendamento**: Ctrl+N
+- **Duplicar agendamento**: Ctrl+P
+- **Excluir agendamento**: Ctrl+D
+- **Salvar agendamento**: Ctrl+S
+- **Fechar diálogo**: Esc
+
+## Dicas para Usuários de Mouse
+- Todos os botões possuem dicas ao passar o mouse (tooltips).
+- Campos obrigatórios são destacados.
+- Use os menus para acessar rapidamente todas as funções.
+
+## Dicas para Usuários de Teclado
+- Use Tab para navegar entre campos e botões.
+- Use os atalhos listados acima para acessar rapidamente todas as funções.
+- Pressione Alt para acessar a barra de menus.
+- Em listas, use as setas para navegar e Enter para selecionar.
+
+## Recomendações Gerais
+- Sempre revise os contatos antes de iniciar uma campanha.
+- Utilize modelos para agilizar campanhas frequentes.
+- Consulte os relatórios para acompanhar o sucesso dos envios.
+- Em caso de dúvida, acesse o menu Ajuda > Dicas de Uso.
+
+Bom uso!
+
+Equipe Zap Fácil.

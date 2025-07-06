@@ -1,0 +1,22 @@
+{
+    // Task para rodar Ruff com correção automática em todo o projeto
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Ruff: Lint + Fix projeto Python",
+            "type": "shell",
+            "command": "ruff check . --fix",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$ruff"
+            ]
+        }
+    ]
+}

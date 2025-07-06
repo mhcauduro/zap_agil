@@ -1,0 +1,35 @@
+
+# Novidades e Funcionalidades do Zap Fácil
+
+Bem-vindo ao Zap Fácil!
+
+O Zap Fácil é uma solução profissional para automação de mensagens, documentos, mídias e áudios via WhatsApp, desenvolvida para maximizar produtividade, acessibilidade e facilidade de uso. Confira os principais recursos:
+
+## Funcionalidades Principais
+
+- **Envio em massa de mensagens personalizadas** para contatos ou grupos do WhatsApp.
+- **Anexos inteligentes**: envie documentos (PDF, DOC, etc.), imagens, vídeos ou áudios (gravados ou de arquivo).
+- **Adição manual de contatos** com atalho (Ctrl+M) e lista editável.
+- **Importação de listas de contatos** em TXT ou XLSX (números ou nomes de grupos).
+- **Modelos de mensagem**: salve, edite e reutilize templates de texto e anexo (Ctrl+T).
+- **Agendamento de campanhas**: programe envios automáticos para dias e horários específicos (Ctrl+A).
+- **Relatórios detalhados**: visualize, exporte (Ctrl+E) e gerencie o histórico de envios (Ctrl+R).
+- **Controle total da campanha**: iniciar, pausar, retomar e parar envios a qualquer momento.
+- **Feedback visual e histórico de eventos** em tempo real.
+- **Configurações avançadas**: ajuste intervalos, inicialização automática, temas e mais.
+- **Acessibilidade**: navegação fluida por mouse ou teclado, com atalhos em todos os fluxos.
+- **Atalhos globais**: agora você pode acessar rapidamente as novidades (Ctrl+N) e dicas (Ctrl+D) a qualquer momento.
+
+## Novidades Recentes
+
+- Interface ainda mais responsiva e intuitiva.
+- Atalhos padronizados e documentados em tooltips e menus.
+- Adição manual de contatos em destaque, com feedback instantâneo.
+- Melhorias em anexos: escolha entre documento, mídia ou áudio, com controles dedicados.
+- Diálogos de modelos, relatórios e agendamento totalmente acessíveis.
+- Guia de dicas atualizado para facilitar o uso por todos os perfis de usuário.
+- Novos atalhos globais: Ctrl+N para novidades e Ctrl+D para dicas, acessíveis de qualquer tela.
+
+Para saber como usar cada recurso, consulte o arquivo "dicas.txt" ou acesse o menu Ajuda > Dicas de Uso.
+
+Equipe Zap Fácil.

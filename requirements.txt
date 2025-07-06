@@ -1,0 +1,11 @@
+apscheduler
+cryptography
+numpy
+openpyxl
+pygetwindow
+python-dateutil
+selenium
+sounddevice
+soundfile
+webdriver-manager
+wxPython
