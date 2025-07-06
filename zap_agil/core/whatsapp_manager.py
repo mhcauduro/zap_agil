@@ -130,9 +130,8 @@ class WhatsAppManager:
                 search_bar.send_keys(char)
                 time.sleep(random.uniform(HUMAN_TYPING_DELAY_MIN, HUMAN_TYPING_DELAY_MAX))
 
-            time.sleep(random.uniform(0.05, 0.1))  # Espera para o WhatsApp carregar o resultado
+            time.sleep(0.1)  # Espera para o WhatsApp carregar o resultado
             search_bar.send_keys(Keys.ENTER)
-            time.sleep(random.uniform(HUMAN_TYPING_DELAY_MIN, HUMAN_TYPING_DELAY_MAX))
 
             # 5. Verifica se a caixa de mensagem está disponível (confirma chat aberto)
             message_box = self._wait_for_element(By.XPATH, Locators.MESSAGE_INPUT, timeout=5)

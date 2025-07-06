@@ -1,264 +1,486 @@
-🤖 Zap Ágil
+\# 🤖 Zap Ágil
 
-Zap Ágil is a powerful automation tool for sending personalized WhatsApp Web messages with attachments, scheduled campaigns, audio recordings, and detailed delivery reports. Its accessible GUI is built with wxPython, offering full control via mouse and keyboard shortcuts.
 
-Developed by MHC Softwares.
 
-⚙️ Features
+\*\*Zap Ágil\*\* is a powerful automation tool for sending personalized WhatsApp Web messages with attachments, scheduled campaigns, audio recordings, and detailed delivery reports. Its accessible GUI is built with wxPython, offering full control via mouse and keyboard shortcuts.
 
-✅ Automated sending of messages to contacts and groups
 
-📁 Support for contact lists in .txt or .xlsx
 
-🗑️ Campaign scheduling by day and time
+Developed by \*\*MHC Softwares\*\*.
 
-📎 Attachments: documents, images, audio
 
-🎙️ Record audio from within the interface
 
-📊 Delivery reports in CSV format
+---
 
-🔄 Auto-reconnect on WhatsApp Web reload
 
-♿ A fully accessible and keyboard-navigable interface (wxPython)
 
-🧠 Invalid number detection and error feedback
+\## ⚙️ Features
 
-⚖️ Built-in logging and visual notifications
 
-🔧 How It Works
 
-🪀 General Overview
+\- ✅ Automated sending of messages to contacts and groups  
+
+\- 📁 Support for contact lists in `.txt` or `.xlsx`  
+
+\- 🗑️ Campaign scheduling by day and time  
+
+\- 📎 Attachments: documents, images, audio  
+
+\- 🎙️ Record audio from within the interface  
+
+\- 📊 Delivery reports in CSV format  
+
+\- 🔄 Auto-reconnect on WhatsApp Web reload  
+
+\- ♿ A fully accessible and keyboard-navigable interface (wxPython)  
+
+\- 🧠 Invalid number detection and error feedback  
+
+\- ⚖️ Built-in logging and visual notifications
+
+
+
+---
+
+
+
+\## 🔧 How It Works
+
+
+
+\### 🪀 General Overview
+
+
 
 Zap Ágil automates WhatsApp message sending through browser control using Selenium, while handling audio, file operations, and scheduling with robust Python libraries.
 
-📢 Message Engine (Core)
 
-Uses Selenium and webdriver-manager to control WhatsApp Web in a real browser window.
 
-Sends messages individually, either typed or as audio/media attachments.
+\### 📢 Message Engine (Core)
 
-Detects if a number is invalid and logs/report it.
 
-⏰ Scheduler
 
-Campaigns can be scheduled using APScheduler, enabling precise control of sending date and time.
+\- Controls WhatsApp Web in a real browser using Selenium and `webdriver-manager`  
 
-Supports one-time or recurring tasks.
+\- Sends messages individually, typed or as media/audio attachments  
 
-💾 Contact Import
+\- Detects invalid numbers and logs/report them accordingly
 
-Accepts .txt and .xlsx files using openpyxl.
 
-Users can also add/edit contacts manually in the interface.
 
-🎧 Audio Handling
+\### ⏰ Scheduler
 
-Records audio with sounddevice and saves with soundfile in OGG/Opus format.
 
-Playback includes pause/resume using event control.
 
-📈 Reports
+\- Uses `APScheduler` for precise date and time control  
 
-All deliveries, statuses, and failures are logged and can be exported to CSV.
+\- Supports both one-time and recurring tasks
 
-Timestamped, grouped by campaign.
 
-📝 Configuration and Templates
 
-Message templates are editable and savable with variables like @Name, @DueDate, etc.
+\### 💾 Contact Import
 
-Settings are stored and reloaded automatically.
 
-🌐 Accessibility and UX
 
-GUI built with wxPython
+\- Accepts `.txt` and `.xlsx` using `openpyxl`  
 
-Fully usable by keyboard (Tab, Alt, arrows)
+\- Contacts can be added/edited manually via the interface
 
-Shortcuts for all functions (Ctrl+N, Ctrl+D, etc.)
 
-Tooltips on all buttons
 
-Compatible with screen readers
+\### 🎧 Audio Handling
 
-📂 Project Structure
 
-zap_agil_master/
-├── zap_agil/              # Main application code
+
+\- Records audio using `sounddevice`, saves in OGG/Opus with `soundfile`  
+
+\- Playback includes pause/resume using event control
+
+
+
+\### 📈 Reports
+
+
+
+\- All deliveries, statuses, and errors are logged  
+
+\- Exportable to CSV with timestamp and campaign grouping
+
+
+
+\### 📝 Configuration and Templates
+
+
+
+\- Editable/savable message templates with variables like `@Name`, `@DueDate`  
+
+\- Settings persist automatically across sessions
+
+
+
+---
+
+
+
+\## 🌐 Accessibility and UX
+
+
+
+\- GUI built with `wxPython`  
+
+\- Full keyboard navigation (Tab, Alt, arrow keys)  
+
+\- Shortcuts for all functions (Ctrl+N, Ctrl+D, etc.)  
+
+\- Tooltips on every button  
+
+\- Compatible with screen readers
+
+
+
+---
+
+
+
+\## 📂 Project Structure
+
+
+
+```
+
+zap\_agil\_master/
+
+├── zap\_agil/              # Main application code
+
 ├── tests/                 # Pytest test suite
+
 ├── assets/                # Icons, docs, static files
-├── .vscode/               # Tasks, settings for development
-├── zap_agil.pyw           # App launcher
-├── zap_agil.spec          # PyInstaller config
+
+├── .vscode/               # Tasks and development settings
+
+├── zap\_agil.pyw           # App launcher
+
+├── zap\_agil.spec          # PyInstaller build config
+
 ├── requirements.txt
+
 ├── dev-requirements.txt
+
 ├── pyproject.toml
+
 └── README.md
 
-🚀 Getting Started
+```
 
-1. Clone the repository
+
+
+---
+
+
+
+\## 🚀 Getting Started
+
+
+
+1\. \*\*Clone the repository\*\*
+
+
+
+```bash
 
 git clone https://github.com/your-username/zap-agil.git
-cd zap-agil/zap_agil_master
 
-2. Create virtual environment
+cd zap-agil/zap\_agil\_master
+
+```
+
+
+
+2\. \*\*Create a virtual environment\*\*
+
+
+
+```bash
 
 python -m venv .venv
 
-Windows:
+```
 
-.venv\Scripts\activate
 
-macOS/Linux:
 
-source .venv/bin/activate
+\- \*\*Windows:\*\*  
 
-3. Install dependencies
+&nbsp; `.venv\\Scripts\\activate`
+
+
+
+\- \*\*macOS/Linux:\*\*  
+
+&nbsp; `source .venv/bin/activate`
+
+
+
+3\. \*\*Install dependencies\*\*
+
+
+
+```bash
 
 pip install -r requirements.txt
 
-For development:
+```
+
+
+
+\- For development:
+
+
+
+```bash
 
 pip install -r dev-requirements.txt
 
-4. Run the application
+```
 
-python zap_agil/zap_agil.pyw
 
-🦞 Usage Tips (Keyboard & Mouse)
 
-Navigation
+4\. \*\*Run the application\*\*
 
-Ctrl+Tab: Switch between tabs
 
-Alt: Activate menu bar
 
-Global Shortcuts
+```bash
 
-Ctrl+Q: Quit app
+python zap\_agil/zap\_agil.pyw
 
-Ctrl+M: Minimize to tray
+```
 
-Ctrl+T: Open templates
 
-Ctrl+A: Schedule campaigns
 
-Ctrl+R: View reports
+---
 
-Ctrl+G: Open settings
 
-Ctrl+N: Read news
 
-Ctrl+D: Read usage tips
+\## 🦞 Usage Tips (Keyboard \& Mouse)
 
-Message Sending
 
-Enter contact: type + press Enter
 
-Manual list add: fill + Ctrl+Enter
+\### Navigation
 
-Remove contact: select + Delete
 
-Load contact file: click or Ctrl+B
 
-Message & Attachments
+\- `Ctrl+Tab`: Switch between tabs  
 
-Write message using variables (@Name, @DueDate)
+\- `Alt`: Activate menu bar
 
-Attach document: Ctrl+D
 
-Attach media: Ctrl+I
 
-Attach audio: Ctrl+A
+\### Global Shortcuts
 
-Record: ● Record → click to stop
 
-Play/Pause: ▶ / ❚❚
 
-Templates
+\- `Ctrl+Q`: Quit app  
 
-New: Ctrl+N
+\- `Ctrl+M`: Minimize to tray  
 
-Save: Ctrl+S
+\- `Ctrl+T`: Open templates  
 
-Delete: Ctrl+D
+\- `Ctrl+A`: Schedule campaigns  
 
-Attach: Ctrl+B
+\- `Ctrl+R`: View reports  
 
-Remove: Ctrl+R
+\- `Ctrl+G`: Open settings  
 
-Close: Esc
+\- `Ctrl+N`: Read news  
 
-Reports
+\- `Ctrl+D`: Read usage tips
 
-Export CSV: Ctrl+E
 
-Delete: Ctrl+D
 
-Close: Esc
+\### Message Sending
 
-Scheduler
 
-New: Ctrl+N
 
-Duplicate: Ctrl+P
+\- Enter contact: type + press Enter  
 
-Delete: Ctrl+D
+\- Add manually: fill + `Ctrl+Enter`  
 
-Save: Ctrl+S
+\- Remove: select + `Delete`  
 
-Close: Esc
+\- Load list file: click or `Ctrl+B`
 
-Mouse Users
 
-Hover for tooltips
 
-Required fields are highlighted
+\### Message \& Attachments
 
-Use menus to access any feature
 
-Keyboard Users
 
-Navigate with Tab, Shift+Tab, arrows
+\- Use variables like `@Name`, `@DueDate`  
 
-Use Alt to access menus
+\- Attach document: `Ctrl+D`  
 
-Enter to confirm actions in dialogs
+\- Attach media: `Ctrl+I`  
 
-Recommendations
+\- Attach audio: `Ctrl+A`  
 
-Always review contact list before sending
+\- Record: ● Record → click to stop  
 
-Use templates for recurring campaigns
+\- Play/Pause: ▶ / ❚❚
 
-Analyze reports to monitor delivery
 
-Help > Usage Tips for more
 
-📚 For Developers
+\### Templates
 
-Linting & Formatting
 
-Run manually:
+
+\- New: `Ctrl+N`  
+
+\- Save: `Ctrl+S`  
+
+\- Delete: `Ctrl+D`  
+
+\- Attach: `Ctrl+B`  
+
+\- Remove: `Ctrl+R`  
+
+\- Close: `Esc`
+
+
+
+\### Reports
+
+
+
+\- Export CSV: `Ctrl+E`  
+
+\- Delete: `Ctrl+D`  
+
+\- Close: `Esc`
+
+
+
+\### Scheduler
+
+
+
+\- New: `Ctrl+N`  
+
+\- Duplicate: `Ctrl+P`  
+
+\- Delete: `Ctrl+D`  
+
+\- Save: `Ctrl+S`  
+
+\- Close: `Esc`
+
+
+
+\### Mouse Users
+
+
+
+\- Hover for tooltips  
+
+\- Required fields are highlighted  
+
+\- Use menus for all features
+
+
+
+\### Keyboard Users
+
+
+
+\- Navigate with Tab, Shift+Tab, arrow keys  
+
+\- Alt to access menus  
+
+\- Enter to confirm dialogs
+
+
+
+---
+
+
+
+\## ✅ Best Practices
+
+
+
+\- Always review contact list before sending  
+
+\- Use templates for recurring campaigns  
+
+\- Analyze reports to monitor delivery  
+
+\- Visit Help > Usage Tips for more
+
+
+
+---
+
+
+
+\## 📚 For Developers
+
+
+
+\### Linting \& Formatting
+
+
+
+```bash
 
 ruff check .
+
 ruff check . --fix
 
-Or use VS Code task: Ctrl+Shift+P → Run Task → lint
+```
 
-Testing
+
+
+\- Or in VS Code:  
+
+&nbsp; `Ctrl+Shift+P → Run Task → lint`
+
+
+
+\### Testing
+
+
+
+```bash
 
 pytest
 
-Building the .exe
+```
 
-pyinstaller zap_agil.spec
 
-Creates output in dist/zap_agil/
 
-Enjoy!
+\### Building Executable
 
-MHC Softwares
+
+
+```bash
+
+pyinstaller zap\_agil.spec
+
+```
+
+
+
+Output will be in `dist/zap\_agil/`
+
+
+
+---
+
+
+
+\*\*Enjoy!\*\*  
+
+\_MHC Softwares\_
+
+```
+
+
 

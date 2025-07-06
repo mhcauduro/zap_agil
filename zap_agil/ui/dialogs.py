@@ -1157,7 +1157,7 @@ class CampaignSchedulerDialog(wx.Dialog):
         self.schedule_contact_path.Clear()
         self.rb_schedule_list.SetValue(True)
         self.schedule_name.SetFocus()
-        # Não limpa a seleção da lista aqui!
+        # Não limpa a seleção da lista aqui
         self._update_ui_state()
 
     def _populate_form(self, schedule_data: dict[str, Any]):
